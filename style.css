@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&family=Roboto&display=swap');
+/*Universal*/
+*{
+    margin: 0;
+    padding: 0;
+}
+p {
+    border-radius: 50px;
+    padding: 10px;
+    background-color: #33475b;
+    color: #fff; /* sets the text color to white */
+    border: 2px solid #fff; /* adds a white border */
+}
+body{
+    font-family: 'Poppins';
+    text-align: center;
+}
+/*Navbar*/
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background: #2b2871;
+    position: fixed;
+}
+.logo{
+    width: 30%;
+    float: left;
+    text-align: left;
+    line-height: 100px;
+}
+.logo a{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Pacifico';
+    color: white;
+    letter-spacing: 4px;
+}
+nav{
+    float: right;
+    line-height: 100px;
+    z-index: 2;
+}
+nav a{
+    text-decoration: none;
+    font-family: 'Poppins';
+    letter-spacing: 4px;
+    font-size: 20px;
+    color: white;
+    padding: 36px 10px;
+    margin: 0 1px;
+    font-weight: 500;
+}
+nav a:hover{
+    background: white;
+    color: #130f40;
+}
+/*Background*/
+.banner-area{
+    background-image: url(IMAGES/Not\ image.gif);
+    background-size: cover;
+    background-position: center;
+    top: 100px;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+}
+.banner-area::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #130f40;
+    opacity: .7;
+    z-index: -1;
+}
+.banner-area h2{
+    padding: 8%;
+    font-size: 80px;
+    color: #fff;
+}
+/*Contents*/
+.content-area{
+    width: 100%;
+    height: 800%;
+    position: relative;
+    background: #fff;
+    top: 550px;
+}
+.content-area h2{
+    font-size: 40px;
+    margin: 0;
+    padding: 30px;
+    letter-spacing: 4px;
+}
+.wrapper img{
+    height: auto;
+    width: 1000;
+}
+.wrapper a{
+    color: white;
+    text-decoration: underline5;
+}
+.content-area p{
+    padding: 2% 0;
+    line-height: 35px;
+    text-align: justify;
+}
